@@ -6,6 +6,7 @@ public class Trapez implements Figura {
 
     @Override
     public void obwód() {
+        System.out.println("Podaj wszystkie boki:");
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int c = scanner.nextInt();
@@ -17,8 +18,10 @@ public class Trapez implements Figura {
 
     @Override
     public void pole() {
+        System.out.println("Podaj podstawy:");
         int a = scanner.nextInt();
         int b = scanner.nextInt();
+        System.out.println("Podaj wysokiść:");
         int h = scanner.nextInt();
 
         int pole = pole(a, b, h);

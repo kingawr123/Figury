@@ -6,6 +6,8 @@ public class Koło implements Figura{
 
     @Override
     public void obwód() {
+
+        System.out.println("Podaj promień:");
         int r = scanner.nextInt();
 
         double obwód = obwód(r);
@@ -14,6 +16,7 @@ public class Koło implements Figura{
 
     @Override
     public void pole() {
+        System.out.println("Podaj promień:");
         int r = scanner.nextInt();
 
         double pole = pole(r);

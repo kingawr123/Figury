@@ -6,6 +6,7 @@ public class Prostokąt implements Figura{
 
     @Override
     public void obwód() {
+        System.out.println("Podaj 2 boki:");
         int a = scanner.nextInt();
         int b = scanner.nextInt();
 
@@ -15,6 +16,7 @@ public class Prostokąt implements Figura{
 
     @Override
     public void pole() {
+        System.out.println("Podaj 2 boki:");
         int a = scanner.nextInt();
         int b = scanner.nextInt();
 
@@ -23,10 +25,10 @@ public class Prostokąt implements Figura{
     }
 
     private int obwód(int a, int b) {
-        return a + b;
+        return 2*a + 2*b;
     }
 
     private int pole(int a, int b){
-        return 2*a + 2*b;
+        return a*b;
     }
 }
